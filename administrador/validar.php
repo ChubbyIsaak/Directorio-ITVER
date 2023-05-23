@@ -1,7 +1,7 @@
 <?php
 function validaNombreUsuario($Dato)
 {
-    $pattern = "/^[a-z,0-9]{2,12}$/";
+    $pattern = "/^[a-z,0-9]{2,64}$/";
     if (preg_match($pattern, $Dato)) {
         return true;
     } else {

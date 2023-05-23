@@ -18,7 +18,8 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li class="nav-item">
-                                    <a class="dropdown-item" href="/Directorio ITVER/empleados/index.php">Empleados</a>
+                                    <a class="dropdown-item"
+                                        href="/Directorio ITVER/administrador/index.php">Empleados</a>
                                 </li>
                                 <li><a class="dropdown-item" href="#">Gestion Documentos</a></li>
                                 <li><a class="dropdown-item" href="#">Vacaciones</a></li>

@@ -39,7 +39,7 @@ if (isset($_POST['btnLogin'])) {
         $_SESSION['Logueado'] = true;
         $_SESSION['NombreUsuario'] = $row['NombreUsuario'];
         $_SESSION['NombreUsuario'] = $row['NombreAdministrador'] . " " . $row['ApellidosAdministrador'];
-        header("Location: C:\xampp\htdocs\Directorio ITVER/doc/index.html");
+        header("Location: ../index.php");
     } else {
         $ErrorMensaje = "CREDENCIALES NO VALIDAS!!!";
     }

@@ -1,6 +1,6 @@
 <?php
 require_once "../bd/conexion.php";
-$SqlSelect = "SELECT NombreUsuario, NombreAdministrador, ApellidosAdministrador, EmailEmpleado FROM administradores";
+$SqlSelect = "SELECT NombreUsuario, NombreAdministrador, ApellidosAdministrador, EmailEmpleado FROM administrador";
 $ResultSet = $cn->query($SqlSelect);
 $tabla = "<table id='administradores' class='table  table-striped table-bordered table-hover'>";
 $tabla .= "<thead class='table-dark'>";
@@ -21,7 +21,7 @@ if ($ResultSet->num_rows > 0) {
         $tabla .= "<td>" . $row['ApellidosAdministrador'] . "</td>";
         $tabla .= "<td>" . $row['EmailAdministrador'] . "</td>";
         $NombreUsuario = $row['NombreUsuario'];
-        $tabla .= "<td><a href='editar.php?NoEmpleado=$NombreUsuario'>Editar</a></td>";
+        $tabla .= "<td><a href='editar.php?NombreUsuario=$NombreUsuario'>Editar</a></td>";
         $tabla .= "</tr>";
     }
 } else {

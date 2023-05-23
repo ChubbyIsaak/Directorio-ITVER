@@ -7,15 +7,15 @@
             <div class="card-body">
                 <form action="index.php" method="post">
                     <div class="form-group">
-                        <label for="NoEmpleado" class="form-label">Nombre De Usuario</label>
-                        <input type="text" class="form-control" id="NoUsuario" name="NoEmpleado" required
-                            pattern="^[0-9]{2,8}$" title="Captura tu numero de Empleado"
-                            placeholder="Numero de Empleado">
+                        <label for="NombreUsuario" class="form-label">Nombre De Usuario</label>
+                        <input type="text" class="form-control" id="NoUsuario" name="NombreUsuario" required
+                            pattern="^[a-z,0-9]{2,64}$" title="Captura tu numero de Usuario"
+                            placeholder="Nombre de Usuario">
                     </div>
                     <div class="form-group">
-                        <label for="PasswordEmpleado" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="PasswordUsuario" name="PasswordEmpleado"
-                            required title="Contraseña" placeholder="Contraseña">
+                        <label for="PasswordAdministrador" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="PasswordAdministrador"
+                            name="PasswordAdministrador" required title="Contraseña" placeholder="Contraseña">
                     </div>
                     <div class="boton text-center">
                         <input type="submit" value="Iniciar Sesión" id="btnLogin" name="btnLogin"

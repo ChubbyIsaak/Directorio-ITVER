@@ -10,60 +10,37 @@
                 <!-- Formulario de registro de Empleados -->
                 <form action="registro.php" method="post" autocomplete="true">
                     <div class="form-group">
-                        <label for="NoEmpleado" class="form-label">No. de Empleado</label>
-                        <input type="text" class="form-control" id="NoEmpleado" name="NoEmpleado" required
-                            pattern="^[0-9]{2,8}$" value="<?php echo $NoEmpleado; ?>" title="Número de Empleado"
-                            placeholder="Número de Empleado">
+                        <label for="NombreUsuario" class="form-label">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="NombreUsuario" name="NombreUsuario" required
+                            pattern="^[a-z,0-9]{2,64}$" value="<?php echo $NombreUsuario; ?>" title="Nombre de Usuario"
+                            placeholder="Nombre de Usuario">
                     </div>
                     <div class="form-group">
-                        <label for="NombreEmpleado" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="NombreEmpleado" Name="NombreEmpleado"
-                            value="<?php echo $NombreEmpleado; ?>"
+                        <label for="NombreAdministrador" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="NombreAdministrador" Name="NombreAdministrador"
+                            value="<?php echo $NombreAdministrador; ?>"
                             placeholder="ESCRIBA SU NOMBRE USANDO SOLO MAYUSCULAS"
                             title="ESCRIBA SU NOMBRE USANDO SOLO MAYUSCULAS" required pattern="^[A-ZÑÁÉÍÓÚ ]{2,32}$">
                     </div>
                     <div class="form-group">
-                        <label for="ApellidosEmpleado" class="form-label">Apellidos</label>
-                        <input type="text" class="form-control" id="ApellidosEmpleado" Name="ApellidosEmpleado"
-                            value="<?php echo $ApellidosEmpleado; ?>"
+                        <label for="ApellidosAdministrador" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="ApellidosAdministrador"
+                            Name="ApellidosAdministrador" value="<?php echo $ApellidosAdministrador; ?>"
                             placeholder="ESCRIBA SUS APELLIDOS USANDO SOLO MAYUSCULAS"
                             title="ESCRIBA SUS APELLIDOS USANDO SOLO MAYUSCULAS " required
                             pattern="^[A-ZÑÁÉÍÓÚ ]{2,64}$">
                     </div>
                     <div class="form-group">
-                        <label for="DepartamentoEmpleado" class="form-label">Departamento</label>
-                        <input type="text" class="form-control" id="DepartamentoEmpleado" name="DepartamentoEmpleado"
-                            required pattern="^[A-ZÑÁÉÍÓÚ ]{2,32}$" value="<?php echo $DepartamentoEmpleado; ?>"
-                            title="Departamento" placeholder="Departamento">
+                        <label for="EmailAdministrador" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="EmailAdministrador" name="EmailAdministrador"
+                            required value="<?php echo $EmailAdministrador; ?>" title="Correo Electronico:"
+                            placeholder="Correo Electronico">
                     </div>
                     <div class="form-group">
-                        <label for="PuestoEmpleado" class="form-label">Puesto</label>
-                        <input type="text" class="form-control" id="DepartamentoEmpleado" name="PuestoEmpleado" required
-                            pattern="^[A-ZÑÁÉÍÓÚ ]{2,32}$" value="<?php echo $PuestoEmpleado; ?>" title="Puesto"
-                            placeholder="Puesto">
-                    </div>
-                    <div class="form-group">
-                        <label for="IngresoEmpleado" class="form-label">Fecha de Ingreso</label>
-                        <input type="date" class="form-control" id="IngresoEmpleado" name="IngresoEmpleado" required
-                            value="<?php echo $IngresoEmpleado; ?>" title="Fecha de Ingreso"
-                            placeholder="Fecha de ingreso">
-                    </div>
-                    <div class="form-group">
-                        <label for="TelefonoEmpleado" class="form-label">Telefono de Contacto</label>
-                        <input type="text" class="form-control" id="TelefonoEmpleado" name="TelefonoEmpleado" required
-                            pattern="^[0-9]{10}$" value="<?php echo $TelefonoEmpleado; ?>"
-                            title="Captura tu Numero Telefonico" placeholder="Numero Telefonico de Contacto">
-                    </div>
-                    <div class="form-group">
-                        <label for="EmailEmpleado" class="form-label">Correo Electronico</label>
-                        <input type="email" class="form-control" id="EmailEmpleado" name="EmailEmpleado" required
-                            value="<?php echo $EmailEmpleado; ?>" title="Correo Electronico Empresarial:"
-                            placeholder="Correo Electronico Empresarial">
-                    </div>
-                    <div class="form-group">
-                        <label for="PasswordEmpleado" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="PasswordEmpleado" name="PasswordEmpleado"
-                            required title="Contraseña Personal" placeholder="Contraseña Personal">
+                        <label for="PasswordAdministrador" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="PasswordAdministrador"
+                            name="PasswordAdministrador" required title="Contraseña Personal"
+                            placeholder="Contraseña Personal">
                     </div>
                     <div class="form-group">
                         <a href="login.php" class="btn btn-dark-cyan">CANCELAR</a>
